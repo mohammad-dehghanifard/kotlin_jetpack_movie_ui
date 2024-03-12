@@ -14,8 +14,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import ir.dehghanifard.kotlin_jetpack_movie_ui.data.FakeData
-import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppGray
-import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppLightGray
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppWhite
 
 @Composable
