@@ -27,7 +27,7 @@ fun ShowSlider(){
     val lazyState = rememberLazyListState()
     val sliderHeight = 340.dp
     Box(modifier = Modifier
-        .fillMaxSize()
+        .fillMaxWidth()
         .height(sliderHeight)) {
         // slider items
         LazyRow(
@@ -50,7 +50,7 @@ fun ShowSlider(){
             modifier = Modifier
                 .fillMaxWidth()
                 .background(Brush.verticalGradient(listOf(Color.Transparent, AppDark)))
-                .height(340.dp)
+                .height(sliderHeight)
                 .align(Alignment.BottomCenter)
         )
         // top text filter

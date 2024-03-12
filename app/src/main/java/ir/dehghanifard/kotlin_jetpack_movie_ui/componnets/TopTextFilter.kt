@@ -15,6 +15,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import ir.dehghanifard.kotlin_jetpack_movie_ui.data.FakeData
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppGray
+import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppLightGray
+import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppWhite
 
 @Composable
 fun TextFilter(){
@@ -34,7 +36,7 @@ fun TextFilter(){
             ) {
                 Text(
                     text = FakeData.filterText[it],
-                    color = if(selectedFilterText == it) Color.White else AppGray
+                    color = if(selectedFilterText == it) Color.White else AppWhite
                 )
             }
         }

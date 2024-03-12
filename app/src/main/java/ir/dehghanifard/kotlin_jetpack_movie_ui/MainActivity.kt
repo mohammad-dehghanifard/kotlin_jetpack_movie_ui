@@ -43,7 +43,7 @@ fun MainView() {
     Box(modifier = Modifier
         .fillMaxSize()
         .background(AppDark)) {
-        Column(modifier = Modifier.fillMaxWidth().height(340.dp)) {
+        Column(modifier = Modifier.fillMaxSize()) {
             ShowSlider()
 
         }
