@@ -44,7 +44,8 @@ fun MainView() {
             TopView()
             // movie listHeader
             MovieListHeader()
-
+            // movie list
+            MovieListHeader()
         }
     }
 }
