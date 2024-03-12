@@ -11,7 +11,7 @@ import androidx.compose.material3.Surface
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.HomeMovieList
 import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.MovieListHeader
 import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.TopView
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppDark
@@ -33,7 +33,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-@Preview()
 @Composable
 fun MainView() {
     Box(modifier = Modifier
@@ -45,7 +44,7 @@ fun MainView() {
             // movie listHeader
             MovieListHeader()
             // movie list
-            MovieListHeader()
+            HomeMovieList()
         }
     }
 }

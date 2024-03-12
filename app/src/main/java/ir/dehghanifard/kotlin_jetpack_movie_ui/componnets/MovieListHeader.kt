@@ -14,7 +14,7 @@ import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppGray
 
 @Composable
 fun MovieListHeader(){
-    Row(modifier = Modifier.padding(25.dp), verticalAlignment = Alignment.CenterVertically) {
+    Row(modifier = Modifier.padding(horizontal = 25.dp), verticalAlignment = Alignment.CenterVertically) {
         Text(text = "Popular Movie", fontSize = 16.sp, color = Color.White, modifier = Modifier.weight(1f))
         TextButton(onClick = { /*TODO*/ }) {
             Text(text = "View all", fontSize = 14.sp, color = AppGray)
