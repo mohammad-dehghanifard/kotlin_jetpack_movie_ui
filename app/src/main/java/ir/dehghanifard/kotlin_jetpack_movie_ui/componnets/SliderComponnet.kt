@@ -29,6 +29,7 @@ fun ShowSlider(){
     Box(modifier = Modifier
         .fillMaxSize()
         .height(sliderHeight)) {
+        // slider items
         LazyRow(
             state = lazyState,
             flingBehavior = rememberSnapperFlingBehavior(lazyState),
@@ -46,10 +47,19 @@ fun ShowSlider(){
         }
         // gradiant
         Box(
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier
+                .fillMaxWidth()
                 .background(Brush.verticalGradient(listOf(Color.Transparent, AppDark)))
                 .height(340.dp)
                 .align(Alignment.BottomCenter)
         )
+        // top text filter
+        Box(modifier = Modifier
+            .fillMaxWidth()
+            .align(Alignment.TopCenter)) {
+            TextFilter()
+        }
     }
 }
+
+

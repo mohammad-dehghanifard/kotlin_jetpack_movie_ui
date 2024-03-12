@@ -11,5 +11,6 @@ class FakeData {
             Slider(image = R.drawable.joker2),
             Slider(image = R.drawable.joker3)
         )
+        val filterText = listOf<String>("TV","Trailer","Animation","Series")
     }
 }
