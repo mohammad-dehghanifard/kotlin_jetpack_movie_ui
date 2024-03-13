@@ -42,7 +42,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-@Preview
 @Composable
 fun MainView() {
     Box(modifier = Modifier
