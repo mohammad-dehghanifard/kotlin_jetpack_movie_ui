@@ -20,10 +20,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.BottomNavigation
 import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.HomeMovieList
-import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.MovieListHeader
+import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.ListHeader
 import ir.dehghanifard.kotlin_jetpack_movie_ui.componnets.TopView
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppDark
-import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppGray
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.Kotlin_jetpack_movie_uiTheme
 
 class MainActivity : ComponentActivity() {
@@ -42,6 +41,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+@Preview
 @Composable
 fun MainView() {
     Box(modifier = Modifier
@@ -51,7 +51,7 @@ fun MainView() {
             // slider and filter
             TopView()
             // movie listHeader
-            MovieListHeader()
+            ListHeader(title = "Popular Movie")
             // movie list
             HomeMovieList()
         }

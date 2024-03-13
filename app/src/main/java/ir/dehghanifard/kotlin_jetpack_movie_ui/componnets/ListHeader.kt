@@ -13,9 +13,9 @@ import androidx.compose.ui.unit.sp
 import ir.dehghanifard.kotlin_jetpack_movie_ui.ui.theme.AppGray
 
 @Composable
-fun MovieListHeader(){
+fun ListHeader(title : String){
     Row(modifier = Modifier.padding(horizontal = 25.dp), verticalAlignment = Alignment.CenterVertically) {
-        Text(text = "Popular Movie", fontSize = 16.sp, color = Color.White, modifier = Modifier.weight(1f))
+        Text(text = title, fontSize = 16.sp, color = Color.White, modifier = Modifier.weight(1f))
         TextButton(onClick = { /*TODO*/ }) {
             Text(text = "View all", fontSize = 14.sp, color = AppGray)
         }

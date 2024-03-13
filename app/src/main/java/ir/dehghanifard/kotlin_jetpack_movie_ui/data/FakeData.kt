@@ -1,6 +1,7 @@
 package ir.dehghanifard.kotlin_jetpack_movie_ui.data
 
 import ir.dehghanifard.kotlin_jetpack_movie_ui.R
+import ir.dehghanifard.kotlin_jetpack_movie_ui.models.Comment
 import ir.dehghanifard.kotlin_jetpack_movie_ui.models.Movie
 import ir.dehghanifard.kotlin_jetpack_movie_ui.models.Slider
 
@@ -21,6 +22,13 @@ class FakeData {
             Movie(image = R.drawable.movie_5, score = 5f),
             Movie(image = R.drawable.movie_6, score = 4.8f),
             Movie(image = R.drawable.movie_7, score = 4.3f),
+        )
+        val commentList = listOf<Comment>(
+            Comment(avatar = R.drawable.profile1, score = 4, content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+            Comment(avatar = R.drawable.profile2, score = 5, content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+            Comment(avatar = R.drawable.profile3, score = 2, content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+            Comment(avatar = R.drawable.profile4, score = 3, content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+            Comment(avatar = R.drawable.movie_5, score = 5, content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
         )
     }
 }
